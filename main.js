@@ -6,6 +6,6 @@ let Texto = document.querySelector('span');
 
 Texto.textContent = nomeUsuario;
 
-while (nomeUsuario == ''){
+while (nomeUsuario == 'span'){
     nomeUsuario = prompt('Qual o seu nome?');
 }
