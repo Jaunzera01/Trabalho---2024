@@ -10,3 +10,9 @@ while (nomeUsuario == ''){
 }
 
 Texto.textContent = nomeUsuario;
+
+if (nomeUsuario == null){
+    texto.textContent = 'Usuário';
+} else{
+    
+}
