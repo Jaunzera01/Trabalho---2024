@@ -2,11 +2,8 @@
   background-color: beige;
 }
 
-
-
-
 span{
-  color:black
+  color:black;
 }
 
 .contagem{
@@ -18,5 +15,5 @@ span{
 .objetivos{
   color:black;
   padding: 20px;
-  font-size: 18px;
+  
 }
