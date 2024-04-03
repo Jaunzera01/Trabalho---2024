@@ -1,5 +1,5 @@
 .body{
-  background-color: rgb(147, 175, 147);
+  background-color: beige;
 }
 
 span{
@@ -7,7 +7,7 @@ span{
 }
 
 .contagem{
-   background-color:beige;
+   background-color:rgb(147, 175, 147);
    padding: 20px 0;
    text-align: center;
 }
@@ -20,6 +20,6 @@ span{
 
 .ativo{
   background-color: rgb(202, 228, 202);
-  color:wheat;
-  border-bottom: 3px solid blanchedalmond
+  color:white;
+  border-bottom: 3px solid aquamarine
 }
