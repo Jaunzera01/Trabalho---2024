@@ -1,25 +1,56 @@
-const botoes = document.querySelectorAll('.objetivo');
-//botoes.length
+const baconx = document.querySelectorAll('.botao');
+const textos = document.querySelectorAll('.aba-conteudo');
 
-let i = 0;
-for(let i = 0; i < botoes.length; i++ ){
-console.log(i);
-botoes[i].onlinck = function(){
- botoes[i].classList.add('ativo');
+for (let i = 0; i < baconx.length; i++) {
 
+    baconx[i].onclick = function () {
+
+        for (let j = 0; j < baconx.length; j++) {
+
+            baconx[j].classList.remove('ativo');
+
+            textos[j].classList.remove('ativa');
+
+        }
+
+        baconx[i].classList.add('ativo');
+        textos[i].classList.add('ativa');
+
+    }
 }
+    const contadores = document.querySelectorAll(".contador");
+    const tempoobjetivo1 = new Date('2024-04-30T00:00:00');
+    const tempoobjetivo2 = new Date('2024-05-30T00:00:00');
+    const tempoobjetivo4 = new Date('2024-06-30T00:00:00');
+    const tempoobjetivo4 = new Date('2024-12-30T00:00:00');
 
- // botoes[i].classList.remove('ativo);
-}
 
-const contadores = document.querySelectorAll('.contador');
-const tempoObjetivo1 = new Date ('2024-04-17T00:00:00');
 
-let TempoAtual = new Date ();
-let tempoFinal = tempoObjetivo1 - TempoAtual;
-let segundos = Math.floor( tempoFinal/1000);]
-let minutos = Math.floor(segundos/60);
-let horas = Math.floor(minutos/60);
-let dias = Math.floor(horas/24);
+    let tempos = [tempoObjetivol, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
-contadores[0].textContent = dias + " dias " + horas + " horas " + " minutos " + " minutos " + "segumdos " + " segundos ";
+    for (let i = 0; i < contadores.length; i++) {
+        contadores[i].textContent = CalculaTempo(tempos[i]);
+
+    }
+
+
+
+    function CalculaTempo(tempoObjetivo) {
+
+
+        let Tempoatual = new Date();
+        let tempoFinal = tempoobjetivo + Tempoatual;
+        let segundos = Math.floor(tempoFinal / 1000);
+        let minutos = Math.floor(segundos / 60);
+        let hora = Math.floor(minutos / 60);
+        let dias = Math.floor(hora / 24);
+
+        segundos %= 60;
+        minutos %= 60;
+        hora %= 24;
+
+        return dias + "DiAS";
+
+    }
+
+
